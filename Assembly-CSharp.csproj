@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\HelloWorld.cs" />
     <Compile Include="Assets\Scripts\Controls.cs" />
+    <Compile Include="Assets\Scripts\Touch.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Repos/Unity2D/Intro_setup/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

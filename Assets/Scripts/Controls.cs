@@ -6,6 +6,8 @@ public class Controls : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float movespeed;
+    public bool moveright;
+    public bool moveleft;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,15 @@ public class Controls : MonoBehaviour
         if(Input.GetKey(KeyCode.RightArrow))
         {
             rb.velocity = new Vector2(movespeed, rb.velocity.y);
+        }
+
+        if (moveright)
+        {
+            rb.velocity = new Vector2(movespeed, rb.velocity.y);
+        }
+        if (moveleft)
+        {
+            rb.velocity = new Vector2(-movespeed, rb.velocity.y);
         }
     }
 }
